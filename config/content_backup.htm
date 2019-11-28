@@ -1,18 +1,20 @@
 <h1>First</h1>
-<p>(2000/11/7<span tabindex="0"> I was born</span>).</p>
+<p>(2000/11/7<span tabindex="0"> I was born</span>)..</p>
 <p><img alt="" height="316" src="/images/jbUSVnK.gif" width="460"/></p>
-<h1>RungeKutta(阻尼係數=1)</h1>
+<h2>RungeKutta(阻尼係數=1)</h2>
 <p><iframe height="600" src="https://dartpad.dev/embed-inline.html?id=aa7a3bc1cb2804813cb376fa1e4002d3" width="800"></iframe></p>
 <p><img alt="" height="314" src="/images/阻力.png" width="516"/></p>
 <p></p>
 <p>gist:<a href="https://gist.github.com/40823132/4f59ab91b1aa0e12cf67c249b20d8190">https://gist.github.com/40823132/aa7a3bc1cb2804813cb376fa1e4002d3</a></p>
-<p>dartpad: http://mde.tw/dartpad/?id=aa7a3bc1cb2804813cb376fa1e4002d3</p><h1>RungeKutta(阻尼係數=0)</h1>
+<p>dartpad: http://mde.tw/dartpad/?id=aa7a3bc1cb2804813cb376fa1e4002d3</p>
+<h2>RungeKutta(阻尼係數=0)</h2>
 <p><iframe height="600" src="https://dartpad.dev/embed-inline.html?id=d412fcecdf7d89e8f8f75052ac6bdc60" width="800"></iframe></p>
 <p><img alt="" height="310" src="/images/0阻力.png" width="511"/></p>
 <p>gist:<a href="https://gist.github.com/40823132/d412fcecdf7d89e8f8f75052ac6bdc60">https://gist.github.com/40823132/d412fcecdf7d89e8f8f75052ac6bdc60</a></p>
-<p>dartpad:http://mde.tw/dartpad/?id=d412fcecdf7d89e8f8f75052ac6bdc60</p><h1>Hello World</h1>
+<p>dartpad:http://mde.tw/dartpad/?id=d412fcecdf7d89e8f8f75052ac6bdc60</p>
+<h2>Hello World</h2>
 <p><iframe height="600" src="https://dartpad.dev/embed-inline.html?id=855a0d3f980aea4cf066688ea763afe1" width="800"></iframe></p>
-<h1>迴圈程式</h1>
+<h2>迴圈程式</h2>
 <pre class="brush:dart;auto-links:false;toolbar:false" contenteditable="false">void main() {
   for (int i = 0; i &lt; 5; i++) {
     print('hello ${i + 1}');
@@ -21,5 +23,45 @@
 }</pre>
 <p>gist:<a href="https://gist.github.com/40823132/4f59ab91b1aa0e12cf67c249b20d8190">https://gist.github.com/40823132/4f59ab91b1aa0e12cf67c249b20d8190</a></p>
 <p>dartpad:<a href="http://mde.tw/dartpad/?id=4f59ab91b1aa0e12cf67c249b20d8190">http://mde.tw/dartpad/?id=4f59ab91b1aa0e12cf67c249b20d8190</a></p>
-<h1>END</h1>
+<h2>END</h2>
 <p><img alt="" height="235" src="/images/29496596_1482126115229376_3083901804040159232_n.jpg" width="311"/></p>
+<h1>小組的東西</h1>
+<p>好累ㄛ：)</p>
+<p></p>
+<pre></pre>
+<script>
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=mdecourse&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+
+function getHtmlDart(dirname){
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=mdecourse&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function getFlutter(dirname){
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=mdecourse&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function largest(){
+document.getElementById("iframe").width = document.body.clientWidth ;
+document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
+}
+
+function original(){
+document.getElementById("iframe").width = 800 ;
+document.getElementById("iframe").height = 600 ;
+}
+</script>
+<!-- 取 Dart 程式的按鈕 -->
+<h4>純 Dart 程式</h4>
+<p><button onclick="getDart('hello')">Hello</button> <button onclick="getDart('for')">For Loop</button> <button onclick="getDart('sum')">Sum</button> <button onclick="getDart('runge_kutta')">Runge-Kutta</button> <button onclick="getDart('rk_ex1')">RK ex1</button> <button onclick="getDart('mass_spring_damping')">Mass Spring Damping</button></p>
+<h4>Html 程式</h4>
+<p><button onclick="getHtmlDart('roc_flag')">ROC Flag</button> <button onclick="getHtmlDart('grid')">Grid</button> <button onclick="getHtmlDart('xyplot')">X-Y Plot</button> <button onclick="getHtmlDart('slithery')">Slithery</button></p>
+<h4>Flutter 程式</h4>
+<p><button onclick="getFlutter('flutter1')">Flutter1</button> <button onclick="getFlutter('flutter2')">Flutter2</button> <button onclick="getFlutter('flutter3')">Flutter3</button></p>
+<!-- 內建放入的 Dart 原始碼 -->
+<p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
+<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=mdecourse&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/mass_spring_damping&amp;theme=dark" width="800"></iframe></p>
