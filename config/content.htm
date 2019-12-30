@@ -29,13 +29,48 @@
 <h1>第十周作業</h1>
 <p>攝氏轉華氏：</p>
 <p><iframe height="1000" src="https://dartpad.dartlang.org/embed-dart.html?id=0531e7bcacabc538c5d646e923bb402f&amp;theme=dark" width="1200"></iframe></p>
-<p>華氏轉攝氏：<iframe height="1000" src="https://dartpad.dartlang.org/embed-dart.html?id=132e78a9b66a0e242a3a91b0f5a87813&amp;theme=dark" width="1200"></iframe></p><h1>十二周作業</h1>
-<h1>小組的東西</h1>
+<p>華氏轉攝氏：<iframe height="1000" src="https://dartpad.dartlang.org/embed-dart.html?id=132e78a9b66a0e242a3a91b0f5a87813&amp;theme=dark" width="1200"></iframe></p>
+<h1>第十一周到十三周作業</h1>
+<script>
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=408231332&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+
+function getHtmlDart(dirname){
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=40823132&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function getFlutter(dirname){
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=40823132&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function largest(){
+document.getElementById("iframe").width = document.body.clientWidth ;
+document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
+}
+
+function original(){
+document.getElementById("iframe").width = 800 ;
+document.getElementById("iframe").height = 600 ;
+}
+</script>
+<!-- 取 Dart 程式的按鈕 -->
+<h4>純 Dart 程式</h4>
+<p><button onclick="getDart('runge_kutta')">Runge-Kutta</button></p>
+<h4>Html 程式</h4>
+<p><button onclick="getHtmlDart('temperature2')">temperature</button> <!-- 內建放入的 Dart 原始碼 --></p>
+<p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
+<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823132&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/rungekutta&amp;theme=dark" width="800"></iframe></p>
+<h1>小組作業</h1>
 <p>dammmm</p>
 <p></p>
 <pre></pre>
 <p></p>
-<br/>
+<p></p>
+<p>
 <script>
 function getDart(dirname){
     source = "https://dartpad.github.io/embed-dart.html?gh_owner=mdecourse&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
@@ -62,13 +97,13 @@ document.getElementById("iframe").width = 800 ;
 document.getElementById("iframe").height = 600 ;
 }
 </script>
-<!-- 取 Dart 程式的按鈕 -->
+<!-- 取 Dart 程式的按鈕 --></p>
 <h4>純 Dart 程式</h4>
 <p><button onclick="getDart('hello')">Hello</button> <button onclick="getDart('for')">For Loop</button> <button onclick="getDart('sum')">Sum</button> <button onclick="getDart('runge_kutta')">Runge-Kutta</button> <button onclick="getDart('rk_ex1')">RK ex1</button> <button onclick="getDart('mass_spring_damping')">Mass Spring Damping</button></p>
 <h4>Html 程式</h4>
 <p><button onclick="getHtmlDart('roc_flag')">ROC Flag</button> <button onclick="getHtmlDart('grid')">Grid</button> <button onclick="getHtmlDart('xyplot')">X-Y Plot</button> <button onclick="getHtmlDart('slithery')">Slithery</button></p>
 <h4>Flutter 程式</h4>
 <p><button onclick="getFlutter('flutter1')">Flutter1</button> <button onclick="getFlutter('flutter2')">Flutter2</button> <button onclick="getFlutter('flutter3')">Flutter3</button></p>
-<!-- 內建放入的 Dart 原始碼 -->
+<p><!-- 內建放入的 Dart 原始碼 --></p>
 <p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
 <p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=mdecourse&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/mass_spring_damping&amp;theme=dark" width="800"></iframe></p>
