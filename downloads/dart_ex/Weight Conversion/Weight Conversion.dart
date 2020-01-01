@@ -1,5 +1,3 @@
-import 'dart';
-
 GtoB(num g){
 return g*2.2;
 }
