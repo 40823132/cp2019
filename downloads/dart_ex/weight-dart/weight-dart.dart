@@ -1,8 +1,8 @@
 GtoB(num g){
-return g*2.20462262;
+return g*2.2;
 }
 BtoG(num b){
-return b*0.45359237;
+return b*0.45;
 }
 main(){
 var type;
