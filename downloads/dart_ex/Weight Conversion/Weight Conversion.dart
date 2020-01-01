@@ -1,3 +1,5 @@
+import 'dart';
+
 GtoB(num g){
 return g*2.2;
 }
@@ -18,6 +20,6 @@ if (type == "k"){
 print(" $number kg =  ${GtoB(number).toStringAsFixed(2)} lb");
 }else{
 print(" $number lb =  ${BtoG(number).toStringAsFixed(2)} kg");
-  }
- }
+}
+}
 }
