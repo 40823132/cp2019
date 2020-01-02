@@ -92,11 +92,11 @@ void drawFrance(ctx) {
 
 void drawGermany(ctx) {
   ctx.clearRect(0, 0, flag_w, flag_h);
-  ctx.fillStyle = 'rgb(0, 0, 0)';
+  ctx.fillStyle = '#000000';
   ctx.fillRect(0, 0, flag_w, flag_h);
   ctx.fillStyle = '#FF0000';
   ctx.fillRect(0, 66, flag_w, flag_h);
-  ctx.fillStyle = 'rgb(255, 204, 0)';
+  ctx.fillStyle = '#FFCC00';
   ctx.fillRect(0, 133, flag_w, flag_h);
   ctx.closePath();
 }

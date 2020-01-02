@@ -1,9 +1,9 @@
 import "dart:html";
 GtoB(num g){
-return g*2.2;
+return g*2.2046;
 }
 BtoG(num b){
-return b*0.45;
+return b*0.4536;
 }
 main() {
     InputElement tempInput = querySelector("#temp");

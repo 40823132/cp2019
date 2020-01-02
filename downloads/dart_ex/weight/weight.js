@@ -4864,7 +4864,7 @@
         t1 = "\u516c\u65a4 " + H.S(number) + " kg = \u82f1\u78c5 ";
         if (typeof number !== "number")
           return number.$mul();
-        (output && C.LabelElement_methods).setInnerHtml$1(output, t1 + C.JSNumber_methods.toStringAsFixed$1(number * 2.2, 2) + " lb");
+        (output && C.LabelElement_methods).setInnerHtml$1(output, t1 + C.JSNumber_methods.toStringAsFixed$1(number * 2.2046, 2) + " lb");
       } else {
         t1 = type === "L" || type === "l";
         t2 = output && C.LabelElement_methods;
@@ -4872,7 +4872,7 @@
           t1 = "\u82f1\u78c5 " + H.S(number) + " lb = \u516c\u65a4 ";
           if (typeof number !== "number")
             return number.$mul();
-          t2.setInnerHtml$1(output, t1 + C.JSNumber_methods.toStringAsFixed$1(number * 0.45, 2) + " kg");
+          t2.setInnerHtml$1(output, t1 + C.JSNumber_methods.toStringAsFixed$1(number * 0.4536, 2) + " kg");
         } else
           t2.setInnerHtml$1(output, "\u8acb\u8f38\u5165\u6578\u5b57\u52a0\u4e0a KG \u6216 LB!");
       }
