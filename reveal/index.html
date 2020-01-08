@@ -14,7 +14,7 @@ CMSimfly 網際內容管理
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
     <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/white.css" id="theme">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
     
     <!-- Theme used for syntax highlighting of code -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -63,7 +63,7 @@ CMSimfly 網際內容管理
     <script type="text/template">
 ###  hellow world(中文)! dart程式
 
-<iframe width="800" height="600" src="https://dartpad.dev/embed-inline.html?id=855a0d3f980aea4cf066688ea763afe1&amp;theme=dark"></iframe>
+<iframe width="800" height="500" src="https://dartpad.dev/embed-inline.html?id=855a0d3f980aea4cf066688ea763afe1&amp;theme=dark"></iframe>
 
 
     </script>
@@ -75,7 +75,7 @@ CMSimfly 網際內容管理
     <script type="text/template">
 ###  迴圈(loop) dart程式
 
-<iframe width="800" height="600" src="https://dartpad.dev/embed-inline.html?id=4f59ab91b1aa0e12cf67c249b20d8190&amp;theme=dark"></iframe>
+<iframe width="800" height="500" src="https://dartpad.dev/embed-inline.html?id=4f59ab91b1aa0e12cf67c249b20d8190&amp;theme=dark"></iframe>
 
 
 
@@ -85,34 +85,31 @@ CMSimfly 網際內容管理
 
 <section data-markdown>
     <script type="text/template">
-# 國旗
+### 國旗
 
-
-##  
-
-<p><canvas height="200" id="canvas" width="300">
-</canvas> <button id="button">Clear Canvas</button><button id="JP">Draw JP</button> <button id="Russia">Draw Russia
-</button> <button id="ROC">Draw ROC</button> 
-<button id="France">Draw France</button> <button id="Germany">Draw Germany
-</button> <button id="Netherlands">Draw Netherlands</button> <button id="UK">Draw UK</button></p>
-<p></p><script src="/downloads/dart_ex/w17flag/w17flag.js"></script>
-
+<iframe width="800" height="500" src="https://dartpad.github.io/embed-html.html?gh_owner=40823132&gh_repo=cp2019&gh_path=downloads/dart_ex/w17flag&theme=dark" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
     </script>
 </section>
 
-						
+
+<section data-markdown>
+    <script type="text/template">
+### 重量轉換
+
+<iframe width="800" height="500" src="https://dartpad.github.io/embed-html.html?gh_owner=40823132&gh_repo=cp2019&gh_path=downloads/dart_ex/weight&theme=dark" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+    </script>
+</section>				
 <section>
 <section data-markdown>
     <script type="text/template">
 <!-- 請注意, @others 不可以內縮 -->
-# 數學符號與方程式
+### 溫度轉換
 
-Inline math equations go in like so: $\omega = d\phi / dt$. Display
-math should get its own line and be put in in double-dollarsigns:
-
-$$I = \int \rho R^{2} dV$$
+<iframe width="800" height="500" src="https://dartpad.github.io/embed-html.html?gh_owner=40823132&gh_repo=cp2019&gh_path=downloads/dart_ex/temperature2&theme=dark" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </script>
 </section>
 
@@ -122,32 +119,9 @@ $$I = \int \rho R^{2} dV$$
 <section data-markdown>
     <script type="text/template">
 <!-- 請注意, @others 不可以內縮 -->
-## 利用 Markdown 寫投影片
-以下利用 Markdown 格式展示 Python 程式碼:
-```
-# use threading and subprocess to threading the make process
-import os
-import subprocess
-import threading
+### 函數式
 
-def domake():
-    
-    path = "../exposed/api/exposed"
-    ubuntu = "../Ubuntu"
-    
-    # create obj path
-    
-    if not os.path.exists(path+"/../obj"):
-        os.makedirs(path+"/../obj")
-    
-    subprocess.call(["make", "clean"], cwd=path)
-    subprocess.call("make", cwd=path)
-    subprocess.call(["cp", "{libslvs.so, _slvs.so, slvs.py}", ubuntu], cwd=path)
-    subprocess.call(["python3", "circle_ex.py"], cwd=path+"/"+ubuntu)
-    
-make = threading.Thread(target=domake)
-make.start()
-```
+<iframe width="800" height="500" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823132&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/rungekutta&amp;theme=dark"></iframe>
     </script>
 </section>
 
@@ -156,11 +130,12 @@ make.start()
 						
 <section data-markdown>
     <script type="text/template">
- 使用 iframe 導入影片
+ ### 心得
 
-### 導入影片 template
-
-<iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+在這堂課裡使我能自己架設網站和編輯網站，還有學會
+拍影片、上字幕，將自己的程式嵌入個人網站上還能寫
+一些簡單的小程式；例如:重量轉換、繪製國旗。逐漸的
+使我對程式也有了些興趣，希望之後能更精進這個技能。
     </script>
 </section>
 
